@@ -1,0 +1,16 @@
+不传scope值虽然能登陆，但获取数据时返回：
+108 invalid_credencial1 用户未授权访问此数据
+
+示例中有豆瓣说的scope值，我知道书籍和电影是book_basic_r,movie_basic_r，不知道社区的是什么？为什么没有一份对照表？
+
+https://www.douban.com/service/auth2/auth?
+client_id=0b5405e19c58e4cc21fc11a4d50aae64&
+redirect_uri=https://www.example.com/back&
+response_type=token&
+scope=shuo_basic_r,shuo_basic_w
+
+
+ ————————————-
+豆瓣的scope的array = [“douban”, “movie”, “community”, “book”, “music”, “shuo”, “event”];
+
+r, w 代表读写
